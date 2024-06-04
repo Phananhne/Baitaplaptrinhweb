@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Bai6.Models.Category>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+           <li>@Html.ActionLink(item.CategoryName, "GetBookByCategory/" + item.CategoryId, "Book") </li>
+        </td>
+        
+    </tr>
+}
+
